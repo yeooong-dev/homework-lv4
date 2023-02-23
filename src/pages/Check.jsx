@@ -69,6 +69,9 @@ const Con = styled.div`
   display:inline-block;
   line-height:20px;
   margin-bottom:100px;
+    
+  &::-webkit-scrollbar {
+    display: none;
 `
 
 const StName = styled.p`
@@ -121,8 +124,6 @@ const MemoBox = styled.div`
   padding-left:160px;
   padding-bottom:40px;
   position:relative;
-  &::-webkit-scrollbar {
-    display: none;
   }
 `
 
