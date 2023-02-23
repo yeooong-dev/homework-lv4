@@ -48,6 +48,9 @@ const Box1 = styled.div `
   padding:40px;
   display:inline-block;
   margin-right:50px;
+  box-shadow: 10px 10px 3px -2px rgba(38,38,38,0.18);
+  -webkit-box-shadow: 10px 10px 3px -2px rgba(38,38,38,0.18);
+  -moz-box-shadow: 10px 10px 3px -2px rgba(38,38,38,0.18);
 
   &:hover{  
     border: 4px solid #a6dac2;
@@ -60,6 +63,9 @@ const Box2 = styled.div `
   border-radius:30px;
   padding:40px;
   display:inline-block;
+  box-shadow: 10px 10px 3px -2px rgba(38,38,38,0.18);
+  -webkit-box-shadow: 10px 10px 3px -2px rgba(38,38,38,0.18);
+  -moz-box-shadow: 10px 10px 3px -2px rgba(38,38,38,0.18);
 
   &:hover{  
     border: 5px solid #a6dac2;

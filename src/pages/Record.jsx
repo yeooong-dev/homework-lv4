@@ -85,7 +85,7 @@ const P = styled.p`
 `
 
 const Btn = styled.button`
-    width:150px; height:50px;
+    width:160px; height:60px;
     border-radius:50px;
     border:none;
     margin: 20px;
@@ -97,6 +97,13 @@ const Btn = styled.button`
     box-shadow: -2px 8px 11px -2px rgba(48,212,158,0.37);
     -webkit-box-shadow: -2px 8px 11px -2px rgba(48,212,158,0.37);
     -moz-box-shadow: -2px 8px 11px -2px rgba(48,212,158,0.37);
+
+    &:hover{  
+      border: 4px solid #a6dac2;
+      transition:.3s;
+      background:none;
+      color:black;
+    }
 `
 
 //뒤로가기
@@ -178,7 +185,7 @@ function Record() {
                 <InputBox value={title} onChange={titleAddHandler} maxLength='50' type="text" placeholder="음식을 입력해 주세요. (50자 이내)"/>
 
                 <P>내용</P> <br />
-                <InputBox3 value={memo} onChange={memoAddHandler} maxLength='200' type="text" placeholder=" 내용을 입력해 주세요. (200자 이내) &#13;&#10; ex) 아침에 국밥 한그릇" />
+                <InputBox3 value={memo} onChange={memoAddHandler} maxLength='100' type="text" placeholder=" 내용을 입력해 주세요. (100자 이내) &#13;&#10; ex) 아침에 국밥 한그릇" />
 
                 <br />
                 <Btn onClick={clickAddButtonHandler}>추가하기</Btn>

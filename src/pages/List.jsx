@@ -40,9 +40,7 @@ const H1 = styled.div `
   font-family: 'KyoboHand';
   `
 
-const Contents = styled.div `   
-  position:relative;
-  top:150px;
+const Contents = styled.div `
   width:1000px; height:auto;
   text-align:center;
   display: flex;
@@ -62,39 +60,45 @@ const StBtn = styled.button`
     border:none;
     color:white;
     cursor:pointer;
+    z-index:2;
 `
 
 const Con = styled.div`
-  position:absolute;
-  top:250px;
-  width:500px; height:80px;
+  position:relative;  
+  top:160px;
+  width:460px; height:90px;
   background:#f0f0f0;
   border-radius:30px;
   padding:40px;
   line-height:20px;
   margin-bottom:50px;
+  &:nth-child(1){
+    margin-top:200px;
+  }
+  &:last-child{
+    margin-bottom:300px;
+  }
 `
 
 const StName = styled.p`
   position:absolute;
-  bottom:20px; left:70px;
   font-weight:bold;
-  font-size:1.1rem;
+  font-size:1.1rem; 
+  left:80px; bottom:20px;
 `
 const StTitle = styled.p`
   position:absolute;
-  top:10px; left:70px;
   font-weight:bold;
   font-size:2rem;
+  top:20px; left:80px;
 `
 const Delete = styled.button`
     position:absolute;
-    bottom:60px; right:48px;
     font-size:1rem;
     font-weight:bold;
     border:none;
     cursor:pointer;
- 
+    bottom:30px; right:100px;
 `
 
 function List() {
@@ -128,10 +132,10 @@ function List() {
                   <Delete onClick={()=>dispatch(removeList(item))}><FaTrashAlt size="30" color="#30d49e"></FaTrashAlt></Delete>    
              
                   <Link style={{
+                    position:"absolute",
+                    top:"35px", right:"70px",
                     width:"100px", height:"40px",
                     lineHeight:"40px",
-                    position:"absolute",
-                    top:"58px", right:"110px",
                     textDecoration:"none",
                     color: "black",
                     fontSize:"1.2rem",

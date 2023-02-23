@@ -18,9 +18,13 @@ const listSlice = createSlice({
             const removeArr = [...state.users.filter((v)=>v.id!==action.payload.id)]
             return {counter:state.counter, users:removeArr};
         },
+        editList : (state, action) => {
+            const editArr = [...state.users.map((v)=>v.id===action.payload.id ? {...v, memo:action.payload.memo} : v)] 
+            return {counter:state.counter, users:editArr};
+        }
     },
 });
 
 
 export default listSlice.reducer;
-export const { addList, removeList } = listSlice.actions; 
+export const { addList, removeList, editList } = listSlice.actions; 
