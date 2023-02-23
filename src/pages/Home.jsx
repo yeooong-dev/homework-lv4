@@ -14,13 +14,13 @@ const Stmain = styled.div `
 `
 
 const Logo = styled.div `
-  position:fixed;
+  position:absolute;
   top:100px; 
   cursor:pointer;
  ` 
 
 const Title = styled.div `
-  position:fixed;
+  position:absolute;
   top:180px; 
   text-align:center;
 `

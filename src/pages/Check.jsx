@@ -121,6 +121,9 @@ const MemoBox = styled.div`
   padding-left:160px;
   padding-bottom:40px;
   position:relative;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `
 
 const MemoInput = styled.input`
