@@ -3,7 +3,12 @@ import { createSlice } from '@reduxjs/toolkit'
 // 초기값
 export const initalState = {
     counter : 1,
-    users : []
+    users : [
+        // id: 0,
+        // title:"this is title",
+        // memo:"this is memo",
+        // isDone:false,
+    ]
 }
 
 // 리듀서

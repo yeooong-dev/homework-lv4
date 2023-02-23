@@ -1,0 +1,11 @@
+[패키지 설치]
+
+router : yarn add react-router-dom
+redux : yarn add redux react-redux
+tookit : yarn add @reduxjs/toolkit
+styled-components : yarn add styled-components
+icon : yarn add react-icons
+json server : yarn add json-server
+axios : yarn add axios
+port : yarn json-server --watch db.json --port 4000
+react query : yarn add react-query

@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux'
 import { FaTrashAlt } from "react-icons/fa";
 import { removeList } from '../redux/modules/list';
+// import { getList } from '../api/list';
+// import { useQuery } from 'react-query';
 
 
 
@@ -11,6 +13,9 @@ function List() {
   const userList = useSelector((state)=>state.list)
   const dispatch = useDispatch()
   
+  // const { isLoading, isError, data } = useQuery("list,", getList); 
+
+
   return (
     <Stmain>
         <Contents>
