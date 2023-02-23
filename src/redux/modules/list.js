@@ -12,7 +12,7 @@ const listSlice = createSlice({
     initialState:initalState,
     reducers : {
         addList : (state, action) => {
-            return {counter:state.counter+1, users:[...state.users, {id:state.counter, ...action.payload, isDpne:false}]}
+            return {counter:state.counter+1, users:[...state.users, {id:state.counter, ...action.payload, isDone:false}]}
         },
         removeList : (state, action) => {
             const removeArr = [...state.users.filter((v)=>v.id!==action.payload.id)]
