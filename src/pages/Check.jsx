@@ -56,6 +56,7 @@ const H1 = styled.div `
 const Contents = styled.div `
   position:relative;
   width:1000px; height:500px;
+  margin-bottom:50px;
   text-align:center;
 `
 const Con = styled.div`
